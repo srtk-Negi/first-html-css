@@ -1,0 +1,167 @@
+body
+{
+    /* background: rgba(59, 66, 78, 0.5);  */
+    background:linear-gradient(to bottom,black 0%, black 9%, rgba(59, 66, 78, 0.5) 9.9%, rgba(59, 66, 78, 0.5) 80.6%, black 83%, black 100%);
+    animation:fade-in 3s;
+}
+
+.heading
+{
+    color: yellow;
+    font-size: 80pt;
+    animation:color 2s;
+    animation-iteration-count: infinite;
+}
+.content
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgb(53, 53, 53);
+    color: yellow;
+}
+img
+{
+    width: 425px;
+    height: 250px;
+    transition: all 0.5s;
+}
+
+h1
+{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 50pt;
+    font-weight:600;
+}
+
+#image-1
+{
+    float: right;
+    margin: 15px;
+    height: 300px;
+}
+
+img:hover
+{
+    width:450px;
+    height:300px;
+}
+
+#main
+{
+    display:grid;
+    grid-template-columns: 69% 31%;
+    grid-gap:8px;
+    width: 100%;
+}
+
+.main-para
+{
+    font-family: "Lato", serif;
+}
+.para-1
+{
+    font-family: "Lato", serif;
+}
+.para-2
+{
+    font-family: "Lato", serif;
+}
+
+.sidebar
+{
+    font-family: "Roboto Condensed", serif;
+    background: beige;
+    padding: 10px;
+}
+
+.post
+{
+    margin: 10px;
+    border:5px solid rgb(229, 158, 66);
+    padding: 10px;
+}
+
+.image-grid
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.image-grid > img
+{
+    margin: 10px;
+}
+
+.post > a
+{
+    color: rgb(70, 137, 244);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.post > a:hover
+{
+    color: rgb(186, 212, 255);
+}
+
+.footer
+{
+    height:500px;
+    color:yellow; 
+    font-family: 'Indie Flower', cursive;
+}
+.socials
+{
+    font-size: 30pt;
+    text-align: right;
+    margin-top: 150px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.socials a
+{
+    text-decoration: none;
+    color:gold;
+    transition: all 600ms;
+}
+.socials a:hover
+{
+    color:white;
+    font-size:40pt;
+}
+#author
+{
+    text-align: right;
+    
+}
+
+@keyframes color
+{
+    0% 
+    {
+        /* opacity:0%; */
+        /* background: ghostwhite; */
+        color:black;
+    }
+    50% 
+    {
+        /* opacity:100%; */
+        /* background: black; */
+        color: white;
+    }
+    100%
+    {
+        /* background: ghostwhite; */
+        color:black;
+    }
+}
+
+@keyframes fade-in
+{
+    from{opacity: 0%;}
+    to{opacity: 100%}
+}
+
+
